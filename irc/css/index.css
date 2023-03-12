@@ -1,0 +1,74 @@
+.menu-box {
+    margin: 50px;
+    border: 10px solid black;
+    border-radius: 10px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-box .header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.zamboni-img {
+    background-color: transparent;
+    animation: zamboni-animation 2s infinite ease-in-out;
+}
+
+@keyframes zamboni-animation {
+
+    0%,
+    100% {
+        transform: rotate(-20deg);
+    }
+
+    20% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: scale(.95);
+    }
+}
+
+.menu-box .options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:active {
+    transform: scale(95%);
+}
+
+.btn:hover {
+    border: 2px solid black;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.red {
+    background-color: #ce1414;
+}
+
+.gold {
+    background-color: #e49d0b;
+}
+
+.dual {
+    background: linear-gradient(-60deg, #ce1414 50%, #e49d0b 50%);
+}
